@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Forest Eagle</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 15px;
+            color: #1b5e20;
+        }
+
+        h2 {
+            color: #2E7D32;
+            margin-top: 30px;
+        }
+
+        .contact-box {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #4CAF50;
+            margin-bottom: 30px;
+        }
+
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-left: 5px;
+            cursor: pointer;
+            background: #ddd;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #555;
+            text-decoration: none;
+            border: none;
+            font-size: 14px;
+        }
+
+        .lang-btn.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        a {
+            color: #4CAF50;
+        }
+    </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="lang-switch">
+        <button id="btn-de" class="lang-btn active" onclick="switchLang('de')">DE</button>
+        <button id="btn-en" class="lang-btn" onclick="switchLang('en')">EN</button>
+        <button id="btn-tr" class="lang-btn" onclick="switchLang('tr')">TR</button>
+    </div>
+
+    <div class="container">
+
+        <!-- GERMAN SECTION -->
+        <div id="de" class="lang-section active">
+            <h1>Datenschutzerklärung</h1>
+            <p>Stand: 02.01.2026</p>
+
+            <div class="contact-box">
+                <h2>Kontakt</h2>
+                <p>
+                    <strong>Entwickler:</strong> [DEIN NAME]<br>
+                    <strong>Standort:</strong> Berlin, Germany<br>
+                    <strong>E-Mail:</strong> [DEINE EMAIL]
+                </p>
+            </div>
+
+            <h2>1. Allgemeines</h2>
+            <p>Wir nehmen den Schutz Ihrer Daten ernst. Die App <strong>"Forest Eagle"</strong> sammelt keine
+                persönlichen Daten auf unseren eigenen Servern.</p>
+
+            <h2>2. Datenerfassung</h2>
+            <h3>Apple Game Center</h3>
+            <p>Wir nutzen Apple Game Center für Bestenlisten. Ihre Scores werden an Apple gesendet. Dies unterliegt den
+                Datenschutzrichtlinien von Apple.</p>
+            <h3>Lokale Speicherung</h3>
+            <p>Highscores werden lokal auf Ihrem Gerät gespeichert (AsyncStorage).</p>
+
+            <h2>3. Kontakt</h2>
+            <p>Bei Fragen wenden Sie sich bitte an die oben genannte E-Mail-Adresse.</p>
+        </div>
+
+        <!-- ENGLISH SECTION -->
+        <div id="en" class="lang-section">
+            <h1>Privacy Policy</h1>
+            <p>Date: 02.01.2026</p>
+
+            <div class="contact-box">
+                <h2>Contact</h2>
+                <p>
+                    <strong>Developer:</strong> [YOUR NAME]<br>
+                    <strong>Location:</strong> Berlin, Germany<br>
+                    <strong>Email:</strong> [YOUR EMAIL]
+                </p>
+            </div>
+
+            <h2>1. General</h2>
+            <p>We take your privacy seriously. The app <strong>"Forest Eagle"</strong> does not collect any personal
+                data on our own servers.</p>
+
+            <h2>2. Data Collection</h2>
+            <h3>Apple Game Center</h3>
+            <p>We use Apple Game Center for leaderboards. Your scores are submitted to Apple. This is subject to Apple's
+                Privacy Policy.</p>
+            <h3>Local Storage</h3>
+            <p>High scores are stored locally on your device (AsyncStorage).</p>
+
+            <h2>3. Contact</h2>
+            <p>If you have any questions, please contact us at the email address above.</p>
+        </div>
+
+        <!-- TURKISH SECTION -->
+        <div id="tr" class="lang-section">
+            <h1>Gizlilik Politikası</h1>
+            <p>Tarih: 02.01.2026</p>
+
+            <div class="contact-box">
+                <h2>İletişim</h2>
+                <p>
+                    <strong>Geliştirici:</strong> [ADINIZ]<br>
+                    <strong>Konum:</strong> Berlin, Almanya<br>
+                    <strong>E-Posta:</strong> [EMAİLİNİZ]
+                </p>
+            </div>
+
+            <h2>1. Genel</h2>
+            <p>Gizliliğinize önem veriyoruz. <strong>"Forest Eagle"</strong> uygulaması, kendi sunucularımızda hiçbir
+                kişisel veri toplamaz.</p>
+
+            <h2>2. Veri Toplama</h2>
+            <h3>Apple Game Center</h3>
+            <p>Liderlik tabloları için Apple Game Center kullanıyoruz. Skorlarınız Apple'a gönderilir. Bu işlem Apple'ın
+                Gizlilik Politikası'na tabidir.</p>
+            <h3>Yerel Depolama</h3>
+            <p>En yüksek skorlarınız telefonunuzun hafızasında (yerel olarak) saklanır.</p>
+
+            <h2>3. İletişim</h2>
+            <p>Sorularınız için lütfen yukarıdaki e-posta adresinden bizimle iletişime geçin.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
