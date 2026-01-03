@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FelekQuiz - Official App</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Support – RedWhite</title>
 
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        }
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
 
-        h1 {
-            color: #FDC830;
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
+    .container {
+      max-width: 520px;
+      width: 90%;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      border-radius: 24px;
+      padding: 48px 36px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+    }
 
-        p {
-            color: #ddd;
-            margin-bottom: 30px;
-        }
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      color: #fdc830;
+      letter-spacing: 0.5px;
+    }
 
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    .subtitle {
+      margin-top: 8px;
+      margin-bottom: 28px;
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
 
-        a {
-            text-decoration: none;
-            color: #fff;
-            background: rgba(253, 200, 48, 0.2);
-            padding: 15px 30px;
-            border-radius: 30px;
-            border: 1px solid #FDC830;
-            transition: all 0.3s ease;
-            font-weight: bold;
-        }
+    .description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #dddddd;
+      margin-bottom: 36px;
+    }
 
-        a:hover {
-            background: #FDC830;
-            color: #0F2027;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(253, 200, 48, 0.4);
-        }
-    </style>
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 14px 26px;
+      border-radius: 999px;
+      border: 1px solid #fdc830;
+      background: rgba(253, 200, 48, 0.15);
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    a:hover {
+      background: #fdc830;
+      color: #0f2027;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(253, 200, 48, 0.4);
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: #bbbbbb;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>🎡 FelekQuiz</h1>
-        <p>Premium Quiz Game Experience</p>
+  <div class="container">
+    <h1>App Support</h1>
+    <div class="subtitle">Official support page by RedWhite</div>
 
-        <div class="links">
-            <a href="privacy-policy.html">🇩🇪 Datenschutzerklärung</a>
-            <a href="privacy-policy-tr.html">🇹🇷 Gizlilik Politikası</a>
-        </div>
+    <div class="description">
+      This page provides support and privacy information for mobile applications
+      developed by RedWhite, including <strong>Forest Eagle</strong>.
+      <br /><br />
+      If you need help or have questions, please review the privacy policies below
+      or contact us directly.
     </div>
-</body>
 
+    <div class="links">
+      <a href="privacy-policy.html">🇩🇪 Privacy Policy (German)</a>
+      <a href="privacy-policy-tr.html">🇹🇷 Gizlilik Politikası (Turkish)</a>
+    </div>
+
+    <footer>
+      © 2026 RedWhite. All rights reserved.
+    </footer>
+  </div>
+</body>
 </html>
